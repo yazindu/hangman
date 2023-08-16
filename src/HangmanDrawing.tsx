@@ -3,7 +3,7 @@ type HangmanDrawingProps = {
 }
 
 const HEAD = (
-    <div style={{
+    <div key={"HEAD"} style={{
             width: "50px",
             height: "50px",
             borderRadius: "100%",
@@ -15,7 +15,7 @@ const HEAD = (
 )
 
 const BODY = (
-    <div style={{
+    <div key={"BODY"} style={{
             width: "10px",
             height: "100px",
             // borderRadius: "100%",
@@ -28,7 +28,7 @@ const BODY = (
 )
 
 const RIGHT_ARM = (
-    <div style={{
+    <div key={"RIGHT_ARM"} style={{
             width: "100px",
             height: "10px",
             // borderRadius: "100%",
@@ -43,7 +43,7 @@ const RIGHT_ARM = (
 )
 
 const LEFT_ARM = (
-    <div style={{
+    <div key={"LEFT_ARM"} style={{
             width: "100px",
             height: "10px",
             // borderRadius: "100%",
@@ -58,7 +58,7 @@ const LEFT_ARM = (
 )
 
 const RIGHT_LEG = (
-    <div style={{
+    <div key={"RIGHT_LEG"} style={{
             width: "100px",
             height: "10px",
             // borderRadius: "100%",
@@ -73,7 +73,7 @@ const RIGHT_LEG = (
 )
 
 const LEFT_LEG = (
-    <div style={{
+    <div key={"LEFT_LEG"} style={{
             width: "100px",
             height: "10px",
             // borderRadius: "100%",
