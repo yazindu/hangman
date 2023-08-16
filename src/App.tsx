@@ -13,13 +13,13 @@ function App() {
 
     const incorrectLetters = guessedLetters.filter(letter => !wordToGuess.includes(letter))
 
-    console.log('wordToGuess', wordToGuess);
-    console.log('guessedLetters', guessedLetters);
-    console.log('incorrectLetters', incorrectLetters);
+    console.log(wordToGuess);
+    // console.log('guessedLetters', guessedLetters);
+    // console.log('incorrectLetters', incorrectLetters);
 
     const addGuessedLetter = useCallback((letter: string) => {
         if (guessedLetters.includes(letter)) return
-        setGuessedLetters((currentLetters) => [...currentLetters + letter])
+        setGuessedLetters((currentLetters) => [...currentLetters , letter])
     }, [guessedLetters])
 
     useEffect(() => {
