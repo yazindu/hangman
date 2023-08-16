@@ -1,5 +1,4 @@
 import styles from "./Keyboard.module.css"
-import {Key} from "react";
 
 const KEYS = [
     "a",

@@ -13,7 +13,9 @@ function App() {
 
     const incorrectLetters = guessedLetters.filter(letter => !wordToGuess.includes(letter))
 
-    console.log(wordToGuess);
+    console.log('wordToGuess', wordToGuess);
+    console.log('guessedLetters', guessedLetters);
+    console.log('incorrectLetters', incorrectLetters);
 
     const addGuessedLetter = useCallback((letter: string) => {
         if (guessedLetters.includes(letter)) return
