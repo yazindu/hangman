@@ -90,7 +90,6 @@ const LEFT_LEG = (
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
 export const HangmanDrawing = ({numberOfGuesses} : HangmanDrawingProps) => {
-    // console.log('numberOfGuesses' ,numberOfGuesses)
     return (
         <div style={{position: "relative"}}>
             {BODY_PARTS.slice(0, numberOfGuesses)}
